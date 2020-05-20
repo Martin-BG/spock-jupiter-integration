@@ -31,29 +31,45 @@
     </developers>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <java.version>13</java.version>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
 
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <project.encoding>UTF-8</project.encoding>
+        <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
-        <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
-        <maven-failsafe-plugin.version>${maven-surefire-plugin.version}</maven-failsafe-plugin.version>
-
-        <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
-
+        <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy -->
         <groovy.version>3.0.3</groovy.version>
 
-        <groovy-eclipse-compiler.version>3.6.0-03</groovy-eclipse-compiler.version>
-        <groovy-eclipse-batch.version>3.0.3-01</groovy-eclipse-batch.version>
-
+        <!-- https://mvnrepository.com/artifact/org.spockframework/spock-core -->
         <spock.version>2.0-M2-groovy-3.0</spock.version>
 
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
         <jupiter.version>5.6.2</jupiter.version>
 
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <junit.version>4.13</junit.version>
+
+        <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
         <junit-platform-runner.version>1.6.2</junit-platform-runner.version>
+
+        <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-compiler -->
+        <groovy-eclipse-compiler.version>3.6.0-03</groovy-eclipse-compiler.version>
+
+        <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-batch -->
+        <groovy-eclipse-batch.version>3.0.3-01</groovy-eclipse-batch.version>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+
+        <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/build-helper-maven-plugin -->
+        <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+        <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
+        <maven-failsafe-plugin.version>${maven-surefire-plugin.version}</maven-failsafe-plugin.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
 
         <maven-surefire-plugin.forkCount>2C</maven-surefire-plugin.forkCount>
         <maven-surefire-plugin.reuseForks>false</maven-surefire-plugin.reuseForks>
@@ -61,64 +77,72 @@
         <maven-failsafe-plugin.reuseForks>${maven-surefire-plugin.reuseForks}</maven-failsafe-plugin.reuseForks>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.spockframework</groupId>
+                <artifactId>spock-core</artifactId>
+                <version>${spock.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy</artifactId>
+                <version>${groovy.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-params</artifactId>
+                <version>${jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-engine</artifactId>
+                <version>${junit-platform-runner.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all -->
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
-            <version>${groovy.version}</version>
-            <type>pom</type>
-            <scope>test</scope>
+            <artifactId>groovy</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.spockframework/spock-core -->
         <dependency>
             <groupId>org.spockframework</groupId>
             <artifactId>spock-core</artifactId>
-            <version>${spock.version}</version>
-            <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-runner -->
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-runner</artifactId>
-            <version>${junit-platform-runner.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-engine</artifactId>
-            <version>${junit-platform-runner.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>${jupiter.version}</version>
-            <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
-            <version>${jupiter.version}</version>
-            <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine -->
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>${jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -126,7 +150,6 @@
 
         <plugins>
             <plugin>
-                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
@@ -137,14 +160,12 @@
                 </configuration>
 
                 <dependencies>
-                    <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-compiler -->
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-compiler</artifactId>
                         <version>${groovy-eclipse-compiler.version}</version>
                     </dependency>
 
-                    <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-batch -->
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-batch</artifactId>
@@ -154,7 +175,6 @@
             </plugin>
 
             <plugin>
-                <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-compiler -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-eclipse-compiler</artifactId>
                 <version>${groovy-eclipse-compiler.version}</version>
@@ -162,7 +182,6 @@
             </plugin>
 
             <plugin>
-                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
@@ -191,7 +210,6 @@
             </plugin>
 
             <plugin>
-                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>${maven-failsafe-plugin.version}</version>
@@ -221,13 +239,14 @@
 
                     <detail>true</detail>
                     <includes>
+                        <include>**/IT*.java</include>
                         <include>**/*IT.java</include>
+                        <include>**/*ITCase.java</include>
                         <include>**/*IS.java</include>
                     </includes>
                 </configuration>
             </plugin>
 
-            <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/build-helper-maven-plugin -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
