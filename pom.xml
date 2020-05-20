@@ -33,27 +33,27 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <java.version>11</java.version>
+        <java.version>13</java.version>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
 
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 
-        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>${maven-surefire-plugin.version}</maven-failsafe-plugin.version>
 
-        <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
+        <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
 
-        <groovy.version>2.5.8</groovy.version>
+        <groovy.version>3.0.3</groovy.version>
 
-        <groovy-eclipse-compiler.version>3.5.0-01</groovy-eclipse-compiler.version>
-        <groovy-eclipse-batch.version>2.5.8-02</groovy-eclipse-batch.version>
+        <groovy-eclipse-compiler.version>3.6.0-03</groovy-eclipse-compiler.version>
+        <groovy-eclipse-batch.version>3.0.3-01</groovy-eclipse-batch.version>
 
-        <spock.version>1.3-groovy-2.5</spock.version>
+        <spock.version>2.0-M2-groovy-3.0</spock.version>
 
-        <jupiter.version>5.5.2</jupiter.version>
+        <jupiter.version>5.6.2</jupiter.version>
 
-        <junit-platform-runner.version>1.5.2</junit-platform-runner.version>
+        <junit-platform-runner.version>1.6.2</junit-platform-runner.version>
 
         <maven-surefire-plugin.forkCount>2C</maven-surefire-plugin.forkCount>
         <maven-surefire-plugin.reuseForks>false</maven-surefire-plugin.reuseForks>
@@ -83,6 +83,14 @@
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-runner</artifactId>
+            <version>${junit-platform-runner.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-engine</artifactId>
             <version>${junit-platform-runner.version}</version>
             <scope>test</scope>
         </dependency>
@@ -125,6 +133,7 @@
 
                 <configuration>
                     <compilerId>groovy-eclipse-compiler</compilerId>
+                    <release>${java.version}</release>
                 </configuration>
 
                 <dependencies>
