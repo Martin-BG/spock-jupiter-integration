@@ -261,10 +261,7 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>src/test/integration/java</source>
-                                <source>src/test/integration/groovy</source>
-                                <source>src/test/unit/java</source>
-                                <source>src/test/unit/groovy</source>
+                                <source>src/test</source>
                             </sources>
                         </configuration>
                     </execution>
