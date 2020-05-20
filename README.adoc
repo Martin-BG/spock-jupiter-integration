@@ -23,7 +23,7 @@ A sample Maven project combining http://spockframework.org/[Spock] and https://j
 * https://maven.apache.org/plugins/maven-compiler-plugin/[Apache Maven Compiler Plugin] - https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin[3.8.1]
 * https://maven.apache.org/surefire/maven-surefire-plugin/[Maven Surefire Plugin] - https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin[3.0.0-M4]
 * https://maven.apache.org/surefire/maven-failsafe-plugin/[Maven Failsafe Plugin] - https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin[3.0.0-M4]
-* https://www.mojohaus.org/build-helper-maven-plugin/[Build Helper Maven Plugin] - https://mvnrepository.com/artifact/org.codehaus.mojo/build-helper-maven-plugin[3.0.0]
+* https://www.mojohaus.org/build-helper-maven-plugin/[Build Helper Maven Plugin] - https://mvnrepository.com/artifact/org.codehaus.mojo/build-helper-maven-plugin[3.1.0]
 
 == Project Structure
 
