@@ -261,7 +261,8 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>src/test</source>
+                                <source>src/test/integration</source>
+                                <source>src/test/unit</source>
                             </sources>
                         </configuration>
                     </execution>
