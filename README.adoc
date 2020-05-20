@@ -25,9 +25,14 @@ A sample Maven project combining http://spockframework.org/[Spock] and https://j
 * https://maven.apache.org/surefire/maven-failsafe-plugin/[Maven Failsafe Plugin] - https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin[3.0.0-M4]
 * https://www.mojohaus.org/build-helper-maven-plugin/[Build Helper Maven Plugin] - https://mvnrepository.com/artifact/org.codehaus.mojo/build-helper-maven-plugin[3.1.0]
 
+== Dependencies Diagram
+
+image::png/dependencies-diagram.png[]
+
 == Project Structure
 
-```
+[source]
+----
 src
     main
         java - source code
@@ -36,7 +41,7 @@ src
         integration - integration tests
         resources - test resources
         unit - unit test
-```
+----
 
 == Recommended File Name Patterns
 
@@ -59,7 +64,8 @@ src
 Latest Spock `1.3-groovy-2.5` cannot execute test classes in parallel mode and that should be fixed in version `2.0`.
 Until then a workaround is available:
 
-```xml
+[source,xml]
+----
 <plugins>
 [...]
   <plugin>
@@ -74,26 +80,27 @@ Until then a workaround is available:
   </plugin>
 [...]
 </plugins>
-```
+----
 
 https://maven.apache.org/surefire/maven-surefire-plugin/examples/fork-options-and-parallel-execution.html?Forked%20Test%20Execution[Documentation]
 
 == JUnit 5 Parallel Execution
 
 Global settings are defined in +
-    `src/test/resources/junit-platform.properties`
+`src/test/resources/junit-platform.properties`
 
-```properties
+[source]
+----
 junit.jupiter.execution.parallel.enabled=true
 junit.jupiter.execution.parallel.config.strategy=dynamic
 junit.jupiter.execution.parallel.config.dynamic.factor=2
 junit.jupiter.execution.parallel.mode.default=concurrent
 junit.jupiter.execution.parallel.mode.classes.default=concurrent
-```
+----
 
 Fine tune per class or for single methods by annotation: +
- `@Execution(ExecutionMode.CONCURRENT)` +
- `@Execution(ExecutionMode.SAME_THREAD)`
+`@Execution(ExecutionMode.CONCURRENT)` +
+`@Execution(ExecutionMode.SAME_THREAD)`
 
 https://junit.org/junit5/docs/snapshot/user-guide/#writing-tests-parallel-execution[Documentation]
 
@@ -106,12 +113,13 @@ Spock 2.0 will be based on the JUnit 5 Platform according to https://github.com/
 
 `src/test/resources/SpockConfig.groovy`
 
-```groovy
+[source,groovy]
+----
 runner {
     filterStackTrace false
     optimizeRunOrder true
 }
-```
+----
 
 http://spockframework.org/spock/docs/1.3/extensions.html[Documentation]
 
@@ -142,7 +150,8 @@ http://spockframework.org/spock/docs/1.3/extensions.html[Documentation]
 . Open `target/site/index.html` in Web browser
 * Setup
 
-```xml
+[source,xml]
+----
 <project>
     [...]
 
@@ -187,7 +196,7 @@ http://spockframework.org/spock/docs/1.3/extensions.html[Documentation]
     </reporting>
 
 </project>
-```
+----
 
 ==== JaCoCo Plugin
 
@@ -197,7 +206,8 @@ http://spockframework.org/spock/docs/1.3/extensions.html[Documentation]
 . Open `target/site/jacoco/index.html` in Web browser
 * Setup
 
-```xml
+[source,xml]
+----
 <project>
     [...]
 
@@ -231,4 +241,4 @@ http://spockframework.org/spock/docs/1.3/extensions.html[Documentation]
     </build>
 
 </project>
-```
+----
