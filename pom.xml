@@ -9,9 +9,9 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Spock 1.3 and JUnit 5 integration</name>
+    <name>Spock2 and JUnit5 integration</name>
     <description>
-        A sample Maven project combining Spock and JUnit 5 tests, parallel test execution and separation between Unit
+        A sample Maven project combining Spock2 and JUnit5 tests, parallel test execution and separation between Unit
         and Integration tests.
     </description>
     <url>https://github.com/Martin-BG/spock-jupiter-integration</url>
