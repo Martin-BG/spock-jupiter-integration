@@ -33,13 +33,9 @@ src
         java - source code
         resources - application resources
     test
-        integration
-            groovy - Spock Integration test
-            java - Java Integration tests
+        integration - integration tests
         resources - test resources
-        unit
-            groovy - Spock Unit test
-            java - Java Unit tests
+        unit - unit test
 ```
 
 == Recommended File Name Patterns
