@@ -40,7 +40,7 @@
         <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
         <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy -->
-        <groovy.version>3.0.4</groovy.version>
+        <groovy.version>3.0.5</groovy.version>
 
         <!-- https://mvnrepository.com/artifact/org.spockframework/spock-core -->
         <spock.version>2.0-M3-groovy-3.0</spock.version>
@@ -55,7 +55,7 @@
         <groovy-eclipse-compiler.version>3.6.0-03</groovy-eclipse-compiler.version>
 
         <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-batch -->
-        <groovy-eclipse-batch.version>3.0.4-02</groovy-eclipse-batch.version>
+        <groovy-eclipse-batch.version>3.0.5-01</groovy-eclipse-batch.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
