@@ -46,10 +46,10 @@
         <spock.version>2.0-M3-groovy-3.0</spock.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
-        <jupiter.version>5.6.2</jupiter.version>
+        <jupiter.version>5.7.0</jupiter.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
-        <junit-platform-runner.version>1.6.2</junit-platform-runner.version>
+        <junit-platform-runner.version>1.7.0</junit-platform-runner.version>
 
         <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-compiler -->
         <groovy-eclipse-compiler.version>3.6.0-03</groovy-eclipse-compiler.version>

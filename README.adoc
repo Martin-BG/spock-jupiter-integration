@@ -4,9 +4,9 @@
 :spock-framework-version: 2.0-M3-groovy-3.0
 :groovy-eclipse-complier-plugin-version: 3.6.0-03
 :groovy-eclipse-batch-complier-version: 3.0.5-01
-:junit-jupiter-engine-version: 5.6.2
+:junit-jupiter-engine-version: 5.7.0
 :junit-jupiter-params-version: {junit-jupiter-engine-version}
-:junit-platform-runner-version: 1.6.2
+:junit-platform-runner-version: 1.7.0
 :apache-maven-compiler-plugin-version: 3.8.1
 :maven-surefire-plugin-version: 3.0.0-M5
 :maven-failsafe-plugin-version: {maven-surefire-plugin-version}
