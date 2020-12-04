@@ -1,6 +1,6 @@
 :jdk-version: 14.0.2
 :apache-maven-version: 3.6.3
-:apache-groovy-version: 3.0.6
+:apache-groovy-version: 3.0.7
 :spock-framework-version: 2.0-M4-groovy-3.0
 :groovy-eclipse-complier-plugin-version: 3.6.0-03
 :groovy-eclipse-batch-complier-version: 3.0.6-01
