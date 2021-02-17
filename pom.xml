@@ -46,16 +46,16 @@
         <spock.version>2.0-M4-groovy-3.0</spock.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
-        <jupiter.version>5.7.0</jupiter.version>
+        <jupiter.version>5.7.1</jupiter.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
-        <junit-platform-runner.version>1.7.0</junit-platform-runner.version>
+        <junit-platform-runner.version>1.7.1</junit-platform-runner.version>
 
         <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-compiler -->
         <groovy-eclipse-compiler.version>3.6.0-03</groovy-eclipse-compiler.version>
 
         <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-batch -->
-        <groovy-eclipse-batch.version>3.0.7-01</groovy-eclipse-batch.version>
+        <groovy-eclipse-batch.version>3.0.7-02</groovy-eclipse-batch.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
