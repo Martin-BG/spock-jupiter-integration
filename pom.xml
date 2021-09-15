@@ -19,7 +19,7 @@
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <url>https://www.opensource.org/licenses/mit-license.php</url>
         </license>
     </licenses>
 
@@ -40,16 +40,16 @@
         <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
         <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy -->
-        <groovy.version>3.0.8</groovy.version>
+        <groovy.version>3.0.9</groovy.version>
 
         <!-- https://mvnrepository.com/artifact/org.spockframework/spock-core -->
         <spock.version>2.0-groovy-3.0</spock.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
-        <jupiter.version>5.7.2</jupiter.version>
+        <jupiter.version>5.8.0</jupiter.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
-        <junit-platform-runner.version>1.7.2</junit-platform-runner.version>
+        <junit-platform-runner.version>1.8.0</junit-platform-runner.version>
 
         <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-compiler -->
         <groovy-eclipse-compiler.version>3.7.0</groovy-eclipse-compiler.version>
