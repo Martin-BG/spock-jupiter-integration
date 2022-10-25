@@ -6,7 +6,7 @@
 
     <groupId>com.public</groupId>
     <artifactId>spock-jupiter-integration</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>Spock2 and JUnit5 integration</name>
@@ -30,8 +30,15 @@
         </developer>
     </developers>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>groovy-plugins-release</id>
+            <url>https://groovy.jfrog.io/artifactory/plugins-release</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <properties>
-        <java.version>15</java.version>
+        <java.version>17</java.version>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
 
@@ -39,23 +46,23 @@
         <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
-        <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy -->
-        <groovy.version>3.0.11</groovy.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.groovy/groovy -->
+        <groovy.version>4.0.6</groovy.version>
 
         <!-- https://mvnrepository.com/artifact/org.spockframework/spock-core -->
-        <spock.version>2.2-M1-groovy-3.0</spock.version>
+        <spock.version>2.3-groovy-4.0</spock.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
-        <jupiter.version>5.8.2</jupiter.version>
+        <jupiter.version>5.9.1</jupiter.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
-        <junit-platform-runner.version>1.8.2</junit-platform-runner.version>
+        <junit-platform-runner.version>1.9.1</junit-platform-runner.version>
 
-        <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-compiler -->
-        <groovy-eclipse-compiler.version>3.7.0</groovy-eclipse-compiler.version>
+        <!-- https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-compiler -->
+        <groovy-eclipse-compiler.version>3.8.0</groovy-eclipse-compiler.version>
 
-        <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-batch -->
-        <groovy-eclipse-batch.version>3.0.8-01</groovy-eclipse-batch.version>
+        <!-- https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-batch -->
+        <groovy-eclipse-batch.version>4.0.6-02</groovy-eclipse-batch.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
@@ -79,7 +86,7 @@
             </dependency>
 
             <dependency>
-                <groupId>org.codehaus.groovy</groupId>
+                <groupId>org.apache.groovy</groupId>
                 <artifactId>groovy</artifactId>
                 <version>${groovy.version}</version>
                 <scope>test</scope>
@@ -110,7 +117,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.codehaus.groovy</groupId>
+            <groupId>org.apache.groovy</groupId>
             <artifactId>groovy</artifactId>
         </dependency>
 

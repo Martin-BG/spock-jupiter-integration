@@ -1,12 +1,12 @@
-:jdk-version: 15.0.2
-:apache-maven-version: 3.8.5
-:apache-groovy-version: 3.0.11
-:spock-framework-version: 2.2-M1-groovy-3.0
-:groovy-eclipse-complier-plugin-version: 3.7.0
-:groovy-eclipse-batch-complier-version: 3.0.8-01
-:junit-jupiter-engine-version: 5.8.2
+:jdk-version: 17.0.4.1
+:apache-maven-version: 3.8.6
+:apache-groovy-version: 4.0.6
+:spock-framework-version: 2.3-groovy-4.0
+:groovy-eclipse-complier-plugin-version: 3.8.0
+:groovy-eclipse-batch-complier-version: 4.0.6-02
+:junit-jupiter-engine-version: 5.9.1
 :junit-jupiter-params-version: {junit-jupiter-engine-version}
-:junit-platform-runner-version: 1.8.2
+:junit-platform-runner-version: 1.9.1
 :apache-maven-compiler-plugin-version: 3.10.1
 :maven-surefire-plugin-version: 3.0.0-M7
 :maven-failsafe-plugin-version: {maven-surefire-plugin-version}
@@ -35,8 +35,8 @@ and https://junit.org/junit5/[JUnit] {junit-jupiter-engine-version} tests, paral
 * https://maven.apache.org/download.cgi[Apache Maven] {apache-maven-version}
 * https://groovy-lang.org/[Apache Groovy] - https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all[{apache-groovy-version}]
 * http://spockframework.org/[Spock Framework] - https://mvnrepository.com/artifact/org.spockframework/spock-core[{spock-framework-version}]
-* https://github.com/groovy/groovy-eclipse/wiki/Groovy-Eclipse-Maven-plugin[Groovy Eclipse Compiler Plugin] - https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-compiler[{groovy-eclipse-complier-plugin-version}]
-* https://github.com/groovy/groovy-eclipse/wiki/Building-Maven-Batch-Compiler[Groovy Eclipse Batch Compiler] - https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-eclipse-batch[{groovy-eclipse-batch-complier-version}]
+* https://github.com/groovy/groovy-eclipse/wiki/Groovy-Eclipse-Maven-plugin[Groovy Eclipse Compiler Plugin] - https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-compiler[{groovy-eclipse-complier-plugin-version}]
+* https://github.com/groovy/groovy-eclipse/wiki/Building-Maven-Batch-Compiler[Groovy Eclipse Batch Compiler] - https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-batch[{groovy-eclipse-batch-complier-version}]
 
 * https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine[JUnit Jupiter Engine {junit-jupiter-engine-version}]
 * https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params[JUnit Jupiter Params {junit-jupiter-params-version}]
