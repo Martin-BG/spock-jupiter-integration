@@ -38,7 +38,7 @@
     </pluginRepositories>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>18</java.version>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
 
@@ -50,7 +50,7 @@
         <groovy.version>4.0.6</groovy.version>
 
         <!-- https://mvnrepository.com/artifact/org.spockframework/spock-core -->
-        <spock.version>2.3-groovy-4.0</spock.version>
+        <spock.version>2.4-M1-groovy-4.0</spock.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
         <jupiter.version>5.9.1</jupiter.version>
