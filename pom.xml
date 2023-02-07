@@ -62,7 +62,7 @@
         <groovy-eclipse-compiler.version>3.8.0</groovy-eclipse-compiler.version>
 
         <!-- https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-batch -->
-        <groovy-eclipse-batch.version>4.0.8-02</groovy-eclipse-batch.version>
+        <groovy-eclipse-batch.version>4.0.9-02</groovy-eclipse-batch.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
