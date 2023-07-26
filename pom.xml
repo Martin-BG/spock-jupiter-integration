@@ -47,19 +47,19 @@
         <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
         <!-- https://mvnrepository.com/artifact/org.apache.groovy/groovy -->
-        <groovy.version>4.0.11</groovy.version>
+        <groovy.version>4.0.13</groovy.version>
 
         <!-- https://mvnrepository.com/artifact/org.spockframework/spock-core -->
         <spock.version>2.4-M1-groovy-4.0</spock.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
-        <jupiter.version>5.9.3</jupiter.version>
+        <jupiter.version>5.10.0</jupiter.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
-        <junit-platform-runner.version>1.9.3</junit-platform-runner.version>
+        <junit-platform-runner.version>1.10.0</junit-platform-runner.version>
 
         <!-- https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-compiler -->
-        <groovy-eclipse-compiler.version>3.8.0</groovy-eclipse-compiler.version>
+        <groovy-eclipse-compiler.version>3.9.0</groovy-eclipse-compiler.version>
 
         <!-- https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-batch -->
         <groovy-eclipse-batch.version>4.0.9-02</groovy-eclipse-batch.version>
@@ -68,10 +68,10 @@
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
 
         <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/build-helper-maven-plugin -->
-        <build-helper-maven-plugin.version>3.3.0</build-helper-maven-plugin.version>
+        <build-helper-maven-plugin.version>3.4.0</build-helper-maven-plugin.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-        <maven-surefire-plugin.version>3.0.0</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>${maven-surefire-plugin.version}</maven-failsafe-plugin.version>
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
     </properties>
