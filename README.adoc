@@ -1,14 +1,14 @@
-:jdk-version: 20
+:jdk-version: 21
 :apache-maven-version: 3.9.6
-:apache-groovy-version: 4.0.16
+:apache-groovy-version: 4.0.17
 :spock-framework-version: 2.4-M1-groovy-4.0
 :groovy-eclipse-complier-plugin-version: 3.9.0
-:groovy-eclipse-batch-complier-version: 4.0.16-03
+:groovy-eclipse-batch-complier-version: 4.0.17-03
 :junit-jupiter-engine-version: 5.10.1
 :junit-jupiter-params-version: {junit-jupiter-engine-version}
 :junit-platform-runner-version: 1.10.1
-:apache-maven-compiler-plugin-version: 3.11.0
-:maven-surefire-plugin-version: 3.2.2
+:apache-maven-compiler-plugin-version: 3.12.1
+:maven-surefire-plugin-version: 3.2.3
 :maven-failsafe-plugin-version: {maven-surefire-plugin-version}
 :build-helper-maven-plugin-version: 3.5.0
 
