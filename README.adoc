@@ -8,7 +8,7 @@
 :junit-jupiter-params-version: {junit-jupiter-engine-version}
 :junit-platform-runner-version: 1.10.1
 :apache-maven-compiler-plugin-version: 3.12.1
-:maven-surefire-plugin-version: 3.2.3
+:maven-surefire-plugin-version: 3.2.5
 :maven-failsafe-plugin-version: {maven-surefire-plugin-version}
 :build-helper-maven-plugin-version: 3.5.0
 
