@@ -47,22 +47,22 @@
         <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
         <!-- https://mvnrepository.com/artifact/org.apache.groovy/groovy -->
-        <groovy.version>4.0.18</groovy.version>
+        <groovy.version>4.0.19</groovy.version>
 
         <!-- https://mvnrepository.com/artifact/org.spockframework/spock-core -->
-        <spock.version>2.4-M1-groovy-4.0</spock.version>
+        <spock.version>2.4-M2-groovy-4.0</spock.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
-        <jupiter.version>5.10.1</jupiter.version>
+        <jupiter.version>5.10.2</jupiter.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
-        <junit-platform-runner.version>1.10.1</junit-platform-runner.version>
+        <junit-platform-runner.version>1.10.2</junit-platform-runner.version>
 
         <!-- https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-compiler -->
         <groovy-eclipse-compiler.version>3.9.0</groovy-eclipse-compiler.version>
 
         <!-- https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-batch -->
-        <groovy-eclipse-batch.version>4.0.18-03</groovy-eclipse-batch.version>
+        <groovy-eclipse-batch.version>4.0.19-03</groovy-eclipse-batch.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
