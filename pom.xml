@@ -38,7 +38,7 @@
     </pluginRepositories>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>22</java.version>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
 
@@ -47,22 +47,22 @@
         <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
         <!-- https://mvnrepository.com/artifact/org.apache.groovy/groovy -->
-        <groovy.version>4.0.21</groovy.version>
+        <groovy.version>4.0.23</groovy.version>
 
         <!-- https://mvnrepository.com/artifact/org.spockframework/spock-core -->
         <spock.version>2.4-M4-groovy-4.0</spock.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
-        <jupiter.version>5.10.2</jupiter.version>
+        <jupiter.version>5.11.0</jupiter.version>
 
         <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine -->
-        <junit-platform-runner.version>1.10.2</junit-platform-runner.version>
+        <junit-platform-runner.version>1.11.0</junit-platform-runner.version>
 
         <!-- https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-compiler -->
         <groovy-eclipse-compiler.version>3.9.0</groovy-eclipse-compiler.version>
 
         <!-- https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-batch -->
-        <groovy-eclipse-batch.version>4.0.21-03</groovy-eclipse-batch.version>
+        <groovy-eclipse-batch.version>4.0.23-03</groovy-eclipse-batch.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
@@ -71,7 +71,7 @@
         <build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-        <maven-surefire-plugin.version>3.3.0</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.5.0</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>${maven-surefire-plugin.version}</maven-failsafe-plugin.version>
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
     </properties>
